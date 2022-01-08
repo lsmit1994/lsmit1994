@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+
+<head>
+
+<title>Javascript test</title>
+
+    <script>
+
+    /*
+    Uphill Text effect
+    By JavaScript Kit (http://javascriptkit.com)
+    Over 400+ free scripts here!
+    */
+    
+    function uphilltext(text){
+    var temptext=text.toUpperCase()
+    var size=1
+    //go through the text, letter by letter
+    for (i=0;i<temptext.length;i++){
+    document.write(temptext.charAt(i).fontsize(size).bold())
+    if (size<7)
+    size++
+    else
+    size=1
+    }
+    }
+    </script>
+
+</head>
+
+<body>
+
+<h1>Mijn eerste javascript test</h1>
+
+<script>
+    uphilltext("Wie kent de striphelden Donald Duck, Mickey Mouse, Popeye, Suske en Wiske?")
+    </script>
+
+
+
+</body>
+
+</html>
