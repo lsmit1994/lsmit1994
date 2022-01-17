@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Oefenopdracht formulieren maken 2</title>
+
+</head>
+
+<body>
+
+<h1>Een formulier voor het invullen van uw naam</h1>
+
+<form method="POST">
+
+<p><label>Voornaam: <input name="voornaam" required></label></p>
+
+<p> <label>Tussenvoegsels: <input name="tussenvoegsels"></label></p>
+
+<p> <label>Achternaam: <input name="achternaam" required></label></p>
+
+<fieldset>
+
+    <legend>Bent u man of vrouw?</legend>
+    
+    <p> <label> <input type="radio" name="geslacht" value="M">Man</label></p>
+    
+    <p> <label> <input type="radio" name="geslacht" value="V">Vrouw</label></p>
+    
+    </fieldset>
+
+<fieldset>
+    <legend>Vakgebied hobby:</legend>
+    <ul>
+        <li><label> <input type="radio" name="hobby" value="filosofie">Filosofie</label></li>
+        <li><label> <input type="radio" name="hobby" value="voetverzorging">Voetverzorging</label></li>
+        <li><label> <input type="radio" name="hobby" value="beleggen">Beleggen voor beginners</label></li>
+    </ul>
+</fieldset>   
+
+<fieldset>
+    <legend>Vakgebied Talen:</legend>
+    <ul>
+        <li><label><input type="radio" name="talen" value="spaans">Spaans voor beginners</label></li>
+        <li><label><input type="radio" name="talen" value="engels">Engels voor gevorderden</label></li>
+        
+    </ul>
+</fieldset>  
+
+
+
+<label>Welke module wilt u graag volgen?
+
+    <select name="module">
+    
+    <optgroup label="Hobby">
+    
+    <option value="Filosofie">Filosofie</option>
+    
+    <option value="Voetverzorging">Voetverzorging</option>
+    
+    <option value="Beleggen">Beleggen voor beginners</option>
+    
+    </optgroup>
+    
+    <optgroup label="Talen">
+    
+    <option value="Spaans">Spaans voor beginners</option>
+    
+    <option value="Engels">Engels voor gevorderden</option>
+    
+    </optgroup>
+    
+    </select>
+    
+    </label>
+
+<p> <label>E-mail: <input name="e-mail" type="email"></label></p>
+
+<p> <label>Wachtwoord: <input name="wachtwoord" type="password"></label></p>
+
+<input type="submit" value="Verzenden">
+
+</form>
+
+
+
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars" size="1" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+</select>
+<br>
+
+<table>
+    <thead>Leon's eerste tabel</thead>
+       
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</2td>
+    </tr>
+    <tr>
+        <td>Poep</td>
+        <td>Leon</td>
+        <td>Mike</td>
+        <td>Enk</td>
+    </tr>
+</table>
+
+</body>
+
+</html>
