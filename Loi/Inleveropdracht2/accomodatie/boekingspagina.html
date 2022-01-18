@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <!--deze 2 meta tags moet in alle html bestanden zitten-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boekingspagina hotel Tenerife</title>
+</head>
+
+<body>
+    <header>
+        <h1>Accomodatie boeken</h1>
+
+        <p>Op deze pagina kunt u de accomodatie boeken en nog een aantal foto's bekijken van de accomodatie.</p>
+    </header>
+
+   
+        
+
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" id="verzamel" enctype="application/x-www-form-urlencoded"> 
+        <h3>Adresgegevens</h3>
+
+        <label for="naam">Naam:</label>
+        <input type="text" id="naam" name="naam" required size="60">
+        <p></p>
+        <label for="adres">Adres:</label>
+        <input type="text" id="adres" name="adres" required size="60"><br>
+        <p></p>
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" pattern="[0-9]{4}\s[A-Z{2}" placeholder="1122 AB" required>
+        <p></p>
+        <label for="woonplaats">Woontplaats:</label>
+        <input type="text" id="woonplaats" name="woonplaats" size="40" required>
+        <p></p>
+        <label for="telnr">Telefoonnummer:</label>
+        <input type="tel" id="telnr" name="telrn" size="15" required>
+        <p></p>
+        <label for="email">Email-adres:</label>
+        <input type="email" id="email" name="email" size="65" placeholder="email@domein.com">   
+            
+    </form>
+  
+
+    <section>
+        <h3>Reservering</h3>
+
+        <div>
+            <label for="personen">Aantal personen:</label>
+            <input type="number" id="personen" name="personen" min="1" max="10" value="1" required>
+        </div>
+        <p></p>
+
+        <div>
+            <label for="aankomstdatum">Aankomstdatum:</label>
+            <input type="date" id="aankomstdatum" name="aankomstdatum" required>
+        </div>      
+        <p></p>
+
+        <div>
+        <label for="verblijfsduur">Verblijfsduur:</label>   
+        <input type="range" id="verblijfsduur" name="verblijfsduur" step="2" min="2" max="20" value="2"
+        oninput="dagen.value=verblijfsduur.value">   
+        <label for="dagen">Aantal dagen:</label>                                                   
+        <output id="dagen" name="dagen" for="verblijfsduur">2</output>
+        </div>
+        <p></p>
+
+        <div>
+            <label for="verzorging">Verzorging:</label>
+            <select id="verzorging" name="verzorging">
+                <option value="logies">Logies</option>
+                <option value="logiesontbijt">Logies met ontbijt</option>
+                <option value="halfpension">Halfpension</option>
+                <option value="volpelsion">Volpension</option>
+            </select>
+        </div>
+        <p></p>
+
+        <div>
+            <label>Annuleringsverzekering:</label>
+            <label for="ja">Ja</label>
+            <input type="radio" id="ja" name="verzekering" value="ja">
+            <label for="nee">Nee</label>
+            <input type="radio" id="nee" name="verzekering" value="nee">
+        </div>
+        <p></p>
+
+        <div>
+            <label for="opmerking">Opmerkingen:</label>
+            <textarea rows="7" cols="25" name="opmerkingen" id="opmerking"></textarea>
+        </div>
+        <p></p>
+    </section>
+
+    <input type="submit" value="Reserveer" form="verzamel" formaction="https://jkorpela.fi/cgi-bin/echo.cgi">
+
+    <section id="foto">
+        <h2>Foto's</h2>
+
+        <figure>
+            <img src="images/lobby.jpg" alt="Lounge gedeelte lobby" width="300" height="450">
+            <figcaption>Lounge plek in de lobby.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/zwembad.jpg" alt="Één van de zwembaden" width="500" height="350">
+            <figcaption>Één van de zwembaden.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/voorbeeldbed.jpg" alt="Bed op hotelkamer" width="500" height="350">
+            <figcaption>Één van de bedden.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/avond.jpg" alt="Zwembad bij avond" width="300" height="450">
+            <figcaption>Sfeer bij avond.</figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <h2>Filmpje</h2>
+        <p>Een kort filmpje over de omgeving.</p>
+
+        <video src="videos/tenerife.mp4" controls width="480" height="320"></video>
+    </section>
+
+</body>
+
+</html>
