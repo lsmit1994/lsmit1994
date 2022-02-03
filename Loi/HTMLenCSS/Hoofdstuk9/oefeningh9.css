@@ -1,0 +1,88 @@
+.div-1{
+    border:10px rgb(228, 20, 20);
+    border-style: dotted;
+    width:300px;
+    height: 120px;
+    padding:20px;
+    margin:16px;
+    background-color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-overflow: none;
+    box-sizing: content-box;
+    color: red;
+    font-size: 0.8em;
+}
+
+
+
+
+.div-2{
+    border:10px rgb(4, 41, 9);
+    border-style: dotted;
+    width:300px;
+    height: 120px;
+    padding:20px;
+    margin:16px;
+    background-color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-overflow: none;
+    box-sizing: content-box;
+    color: red;
+    font-size: 0.8em;
+}
+
+.div-3{
+    border:10px rgb(228, 20, 20);
+    border-style: dotted;
+    width:300px;
+    height: 120px;
+    padding:20px;
+    margin:16px;
+    background-color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-overflow: none;
+    box-sizing: content-box;
+    color: red;
+    font-size: 0.8em;
+}
+
+.div-4{
+    border:10px rgb(228, 20, 20);
+    border-style: solid;
+    width:300px;
+    height: 120px;
+    padding:20px;
+    margin:16px;
+    background-color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-overflow: none;
+    box-sizing: content-box;
+    color: red;
+    font-size: 0.8em;
+}
+
+.div-5{
+    border:10px rgb(228, 20, 20);
+    border-style: dotted;
+    width:300px;
+    height: 120px;
+    padding:20px;
+    margin:16px;
+    background-color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-overflow: none;
+    box-sizing: content-box;
+    color: red;
+    font-size: 0.8em;
+}
+
+div{
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 10px;
+}

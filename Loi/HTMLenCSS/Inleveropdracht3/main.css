@@ -1,0 +1,160 @@
+.container {
+    box-sizing: border-box;
+    display: flow-root;
+    border: 5px solid silver;
+    width: 100%;
+    text-align: center;
+    padding: 0em;   
+}
+
+img {
+    width:100%;
+}
+
+.foto1 {
+    text-align: center;
+    border: thin silver solid;
+    width: 24%;
+    margin:auto;
+    padding: 0.4em;
+}
+
+/** hier eindigt css code blok 1 **/
+
+.blok {
+    box-sizing: border-box;
+    display: inline-block;
+    width:100%;
+    margin-block-start: 10px;
+}
+
+
+#bloklinks {
+    box-sizing: border-box;
+    border: thin solid black;
+    text-align: center;
+    float: left;
+    background-image: url(images/achtergrond.jpg);
+    height: 200px;
+    width:50%;
+}
+
+#blokrechts {
+    box-sizing: border-box;
+    float: left;
+    height: 200px;
+    width:50%;
+}
+
+#bloklinks p {
+    border: 1.5em rgb(255, 255, 255,.4) solid;
+    text-align: center;
+    padding: 2em;
+    margin: 2em;
+    background-color: rgb(250, 250, 250);
+    background-clip: padding-box;
+}
+
+
+.tabelrechts {
+    width:100%;
+    border: thin solid black;
+}
+
+
+th {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+}
+
+.kolom1 {
+    color: rgb(90, 90, 90);
+    text-align: left;
+    background-color: rgb(241, 165, 165);
+}
+
+.kolomleeftijd{
+    text-align: center;
+    background-color: rgb(223, 168, 16);
+}
+
+.kolomspelers {
+    text-align: center;
+    background-color: rgb(235, 87, 29);
+}
+
+
+
+/** vanaf hier het laatste blok , het schaakbord **/
+
+.container2 {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 5px solid silver;
+    width: 100%;
+    text-align: center;
+    padding: 0em;   
+    margin-block-start:1em;
+}
+    
+
+.schaakbord1 {
+    border: 2px solid rgb(247, 3, 3); 
+    border-collapse: collapse;
+    font-size: 30px; 
+    width:100%;
+    color: black;
+    margin:auto;
+}
+
+.schaakbord1 td {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.schaakbord1 tr:nth-of-type(odd) td:nth-of-type(even) {
+    background-color: hsl(20, 6%, 46%);
+}
+
+.schaakbord1 tr:nth-of-type(even) td:nth-of-type(odd) {
+    background-color: hsl(20, 6%, 46%);
+}
+
+.blok3 {
+    display: flow-root;
+    border: 15px solid rgb(70, 69, 69);
+    width: 30%;
+    margin:auto;
+    padding: 0.5em;
+    margin-block-end:1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

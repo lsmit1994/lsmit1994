@@ -1,0 +1,11 @@
+.container {
+    width:800px;
+    border:3px solid blue;
+    box-sizing: content-box;
+}
+
+section {
+    border: 2px solid red;
+    box-sizing: border-box;
+    display:inline-block;
+}

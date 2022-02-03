@@ -1,0 +1,61 @@
+body {
+
+    background-color: #FFC;
+    
+    }
+    
+    .container {
+    
+    width:600px;
+    
+    border: 0.25rem solid blue;
+    
+    margin: 0 auto;
+    
+    display: flow-root;
+    
+    }
+    
+    .blok {
+    
+    width: 200px;
+    
+    height: 200px;
+    
+    margin: 30px;
+    
+    padding: 0.5rem;
+    
+    }
+    
+    .blok1 {
+    
+    float: left;
+    
+    background-color: red;
+    
+    border-inline-start: 0.2rem black solid;
+    
+    }
+    
+    .blok2 {
+    
+    float: right;
+    
+    background-color: white;
+    
+    border-inline-end: 0.2rem black solid;
+    
+    }
+    
+    .blok3 {
+    
+    background-color: lightblue;
+    
+    margin: 20px auto;
+    
+    border-block-end: 0.2rem black solid;
+    
+    display: flow-root;
+    
+    }
