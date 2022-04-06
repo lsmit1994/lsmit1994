@@ -1,0 +1,51 @@
+.vak1 {
+    grid-area: kleur1;
+    background-color: beige;
+}
+
+.vak2 {
+    grid-area: kleur2;
+    background-color: pink;
+}
+
+.vak3 {
+    grid-area: kleur3;
+    background-color: aqua;
+}
+
+.vak4 {
+    grid-area: kleur4;
+    background-color: blue;
+}
+
+.vak5 {
+    grid-area: kleur5;
+    background-color: red;
+
+}
+
+.vak6 {
+    grid-area: kleur6;
+    background-color: green;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: 
+      "kleur1 kleur1 kleur2"
+      "kleur3 kleur4 kleur4"
+      "kleur3 kleur5 kleur6";
+    gap: 10px;
+
+}
+
+
+
+
+
+   
+
+  
