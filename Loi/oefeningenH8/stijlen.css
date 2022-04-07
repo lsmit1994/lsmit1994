@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(255, 145, 0);
+}
+
+h1 {
+    font-family: Calibri;
+    font-size: 50px;
+    color: rgb(31, 31, 34);
+}
+
+h2 {
+    border: 2px;
+    border-color: rgb(8, 8, 8);
+    font-family: 'Courier New', Courier, monospace1;
+    font-size: 20px;
+    color: crimson;
+    margin-top: 2em;
+}
+
+p::first-letter {
+    font-size: 40px;
+    color: darkgreen;
+}
+
+p::first-line {
+    font-style: italic;
+}

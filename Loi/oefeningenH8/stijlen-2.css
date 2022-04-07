@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {background-color: #CCC;
+
+}
+
+h1 {font-family: Calibri;
+
+font-size: 30px;
+
+color: #03C;
+
+}
+
+h2 {font-size: 1.2rem;
+
+}
+
+a > img {border: 0.1rem solid grey;
+
+}
+
+a:link {color: red;
+
+}
+
+a:visited {color: black;
+
+}
+
+a {border-top: solid thin rgb(22, 18, 18);
+
+}
+
+p::first-letter {font-size:2rem;
+
+color: #666;
+
+}
+
+p {border-left: double blue 0.5rem;
+
+}
