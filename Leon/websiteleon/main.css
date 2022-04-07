@@ -1,0 +1,45 @@
+body {
+    margin: 10px;
+    padding: 10px;
+    background: orange;
+    text-align: center;
+    margin: auto;
+}
+
+
+nav {
+    border: black solid 2px;
+    position: relative;
+    flex-flow: row;
+    justify-self: center;
+    text-align: center;
+}
+
+
+ul {
+    margin: auto;
+    display: flex;
+    justify-content: auto;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+    padding: 1em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: auto;
+}
+
+
+
+
+
+
+

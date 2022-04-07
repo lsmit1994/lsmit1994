@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header"
+  ".block1"
+  ".block2"
+  ".block3"
+  ".block4";
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: aqua;
+}
+
+header {
+  display: flex;
+}
