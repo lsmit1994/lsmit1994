@@ -1,19 +1,102 @@
 .container {
   display: grid;
-  grid-template-columns: max-content;
-  grid-template-rows: auto;
+  grid-template-columns: 1;
+  grid-template-rows: 6;
   grid-template-areas: 
   "header"
-  ".block1"
-  ".block2"
-  ".block3"
-  ".block4";
+  "blok1"
+  "blok2"
+  "blok3"
+  "blok4"
+  "footer";
   padding: 20px;
   margin-left: 200px;
   margin-right: 200px;
-  background-color: aqua;
+  row-gap: 30px;
+  background-color: rgb(255, 166, 0);
 }
 
 header {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 1px 8px #ddd;
+}
+
+header li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+  color: #b2dfdb;
+}
+
+.header-left {
+  flex:1 
+}
+
+.header-right {
+  flex:1
+}
+
+.foto1 {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blok2 {
+  display: flex;
+  text-align: justify;
+}
+
+.blok2 p:first-of-type {
+  padding-right: 20px;
+}
+
+article {
+  flex: 1
+}
+
+.media {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.media div {
+  flex: 1;
+}
+
+.blok4 {
+  display: flex;
+  text-align: justify;
+  gap: 20px;
+}
+
+.blok4 a {
+  background-color: blueviolet; 
+}
+
+.blok4 a:hover {
+  background-color: cadetblue;
+}
+
+footer ul {
+  display: flex;
+  text-align: center;
+}
+
+footer ul li {
+  flex:1;
+  list-style: none;
 }
