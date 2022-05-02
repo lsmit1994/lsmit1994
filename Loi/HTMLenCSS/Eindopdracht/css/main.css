@@ -110,6 +110,7 @@ article {
 footer {
   box-shadow: 0 1px 8px rgb(20, 19, 19);
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 footer ul {
