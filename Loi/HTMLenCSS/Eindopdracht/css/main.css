@@ -138,12 +138,19 @@ footer ul li a:hover {
 
 /* hier begint css voor content bordspellen */
 
-.voorbeeldtabel { border: 1px solid rgb(10, 10, 10); border-collapse: collapse; }
-.voorbeeldtabel caption { font-variant: small-caps; font-size: 1.3em; }
-.voorbeeldtabel thead { background-color: rgb(233, 229, 229); }
-.voorbeeldtabel th { text-align: left; font-weight: bold; padding: .5em; }
-.voorbeeldtabel td { border-bottom: 1px solid lightgrey; padding: .5em; }
-.voorbeeldtabel tfoot { font-size: .8rem; text-align: center; border-top: 2px solid darkgrey; }
+.tabel1 { border: 1px solid rgb(10, 10, 10); border-collapse: collapse; }
+.tabel1 caption { font-variant: small-caps; font-size: 1.3em; }
+.tabel1 thead { background-color: rgb(233, 229, 229); }
+.tabel1 th { text-align: left; font-weight: bold; padding: .5em; }
+.tabel1 td { border-bottom: 1px solid lightgrey; padding: .5em; }
+.tabel1 tfoot { font-size: .8rem; text-align: center; border-top: 2px solid darkgrey; }
+
+.tabel2 { border: 1px solid rgb(10, 10, 10); border-collapse: collapse; }
+.tabel2 caption { font-variant: small-caps; font-size: 1.3em; }
+.tabel2 thead { background-color: rgb(233, 229, 229); }
+.tabel2 th { text-align: left; font-weight: bold; padding: .5em; }
+.tabel2 td { border-bottom: 1px solid lightgrey; padding: .5em; }
+.tabel2 tfoot { font-size: .8rem; text-align: center; border-top: 2px solid darkgrey; }
 
 
 
