@@ -57,6 +57,35 @@ header a:hover {
   flex:1
 }
 
+.header-right ul li ul.dropdown-menu {
+  position: absolute;
+  background-color: rgb(255, 166, 0);
+  padding: 5px;
+  margin: 2px;
+  border: #021603 1px solid;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header-right ul li ul.dropdown-menu li  {
+  color: #aa6804;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.header-right ul li ul.dropdown-menu li:hover {
+  color:#b2dfdb ;
+}
+
+.header-right ul li:hover ul.dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
 .foto1 {
   height: 200px;
   width: 100%;
