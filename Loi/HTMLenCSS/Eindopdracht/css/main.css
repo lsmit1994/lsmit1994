@@ -16,6 +16,85 @@
   background-color: rgb(255, 166, 0);
 }
 
+.container1 {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  grid-template-areas: 
+  "header"
+  "sporten"
+  "footer";
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  row-gap: 30px;
+  background-color: rgb(255, 166, 0);
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  grid-template-areas: 
+  "header"
+  "games"
+  "footer";
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  row-gap: 30px;
+  background-color: rgb(255, 166, 0);
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 4;
+  grid-template-areas: 
+  "header"
+  "googlemap"
+  "tabel"
+  "footer";
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  row-gap: 100px;
+  background-color: rgb(255, 166, 0);
+}
+
+.container4 {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  grid-template-areas: 
+  "header"
+  "speluitleg"
+  "footer";
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  row-gap: 30px;
+  background-color: rgb(255, 166, 0);
+}
+
+.container5 {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 5;
+  grid-template-areas: 
+  "header"
+  "speluitleg"
+  "tabellen"
+  "speluitleg2"
+  "footer";
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  row-gap: 30px;
+  background-color: rgb(255, 166, 0);
+}
+
+
 .logo {
   font-size: 3em;
   color: White;
@@ -56,6 +135,25 @@ header a:hover {
 .header-right {
   flex:1
 }
+
+.tabellen {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 40px;
+  gap: 10px;
+  justify-content: space-between;
+  box-shadow: 0 1px 8px rgb(20, 19, 19);
+}
+
+.tabel1 {
+  flex:1
+}
+
+.tabel2 {
+  flex:1
+}
+
+/* CSS voor dropdown menu */
 
 .header-right ul li ul.dropdown-menu {
   position: absolute;
@@ -146,6 +244,7 @@ footer ul {
   font-size: 1em;
   display: flex;
   text-align: center;
+  padding-bottom: 0;
 }
 
 footer ul li {
@@ -181,11 +280,6 @@ footer ul li a:hover {
 .tabel2 th { text-align: left; font-weight: bold; padding: .5em; }
 .tabel2 td { border-bottom: 1px solid lightgrey; padding: .5em; }
 .tabel2 tfoot { font-size: .8rem; text-align: center; border-top: 2px solid darkgrey; }
-
-
-
-
-
 
 
 
