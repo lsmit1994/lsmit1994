@@ -15,8 +15,8 @@
   "blok4"
   "footer";
   padding: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-inline-start: 200px;
+  margin-inline-end: 200px;
   row-gap: 30px;
   background-color: rgb(255, 166, 0);
 }
@@ -30,8 +30,8 @@
   "sporten"
   "footer";
   padding: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-inline-start: 200px;
+  margin-inline-end: 200px;
   row-gap: 30px;
   background-color: rgb(255, 166, 0);
 }
@@ -46,8 +46,8 @@
   "gamevideo"
   "footer";
   padding: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-inline-start: 200px;
+  margin-inline-end: 200px;
   row-gap: 30px;
   background-color: rgb(255, 166, 0);
 }
@@ -62,8 +62,8 @@
   "tabel"
   "footer";
   padding: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-inline-start: 200px;
+  margin-inline-end: 200px;
   row-gap: 100px;
   background-color: rgb(255, 166, 0);
 }
@@ -77,8 +77,8 @@
   "speluitleg"
   "footer";
   padding: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-inline-start: 200px;
+  margin-inline-end: 200px;
   row-gap: 30px;
   background-color: rgb(255, 166, 0);
 }
@@ -94,14 +94,15 @@
   "speluitleg2"
   "footer";
   padding: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-inline-start: 200px;
+  margin-inline-end: 200px;
   row-gap: 30px;
   background-color: rgb(255, 166, 0);
 }
 
 
 .logo {
+  background-image: url("images/gras.jpg");
   font-size: 3em;
   color: White;
 }
@@ -203,7 +204,7 @@ header a:hover {
 }
 
 .blok2 p:first-of-type {
-  padding-right: 20px;
+  padding-inline-end: 20px;
 }
 
 article {
@@ -242,15 +243,15 @@ article {
 
 footer {
   box-shadow: 0 1px 8px rgb(20, 19, 19);
-  margin-bottom: 0;
-  padding-bottom: 0;
+  margin-block-end: 0;
+  padding-block-end: 0;
 }
 
 footer ul {
   font-size: 1em;
   display: flex;
   text-align: center;
-  padding-bottom: 0;
+  padding-block-end: 0;
 }
 
 footer ul li {
@@ -277,15 +278,15 @@ footer ul li a:hover {
 .tabel1 caption { font-variant: small-caps; font-size: 1.3em; }
 .tabel1 thead { background-color: rgb(233, 229, 229); }
 .tabel1 th { text-align: left; font-weight: bold; padding: .5em; }
-.tabel1 td { border-bottom: 1px solid lightgrey; padding: .5em; }
-.tabel1 tfoot { font-size: .8rem; text-align: center; border-top: 2px solid darkgrey; }
+.tabel1 td { border-block-end: 1px solid lightgrey; padding: .5em; }
+.tabel1 tfoot { font-size: .8rem; text-align: center; border-block-start: 2px solid darkgrey; }
 
 .tabel2 { border: 1px solid rgb(10, 10, 10); border-collapse: collapse; }
 .tabel2 caption { font-variant: small-caps; font-size: 1.3em; }
 .tabel2 thead { background-color: rgb(233, 229, 229); }
 .tabel2 th { text-align: left; font-weight: bold; padding: .5em; }
-.tabel2 td { border-bottom: 1px solid lightgrey; padding: .5em; }
-.tabel2 tfoot { font-size: .8rem; text-align: center; border-top: 2px solid darkgrey; }
+.tabel2 td { border-block-end: 1px solid lightgrey; padding: .5em; }
+.tabel2 tfoot { font-size: .8rem; text-align: center; border-block-start: 2px solid darkgrey; }
 
 
 
@@ -299,8 +300,8 @@ input[type=text], select, textarea {
   border: 1px solid #ccc; 
   border-radius: 4px; 
   box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
+  margin-block-start: 6px; 
+  margin-block-end: 16px; 
   resize: vertical 
 }
 
