@@ -18,7 +18,7 @@
   margin-inline-start: 200px;
   margin-inline-end: 200px;
   row-gap: 30px;
-  background-color: rgb(255, 166, 0);
+  background-color: rgba(29, 92, 6, 0.89);
 }
 
 .container1 {
@@ -33,7 +33,7 @@
   margin-inline-start: 200px;
   margin-inline-end: 200px;
   row-gap: 30px;
-  background-color: rgb(255, 166, 0);
+  background-color: rgba(29, 92, 6, 0.89);
 }
 
 .container2 {
@@ -49,7 +49,7 @@
   margin-inline-start: 200px;
   margin-inline-end: 200px;
   row-gap: 30px;
-  background-color: rgb(255, 166, 0);
+  background-color: rgba(29, 92, 6, 0.89);
 }
 
 .container3 {
@@ -65,7 +65,7 @@
   margin-inline-start: 200px;
   margin-inline-end: 200px;
   row-gap: 100px;
-  background-color: rgb(255, 166, 0);
+  background-color: rgba(29, 92, 6, 0.89);
 }
 
 .container4 {
@@ -80,7 +80,7 @@
   margin-inline-start: 200px;
   margin-inline-end: 200px;
   row-gap: 30px;
-  background-color: rgb(255, 166, 0);
+  background-color: rgba(29, 92, 6, 0.89);
 }
 
 .container5 {
@@ -97,21 +97,30 @@
   margin-inline-start: 200px;
   margin-inline-end: 200px;
   row-gap: 30px;
-  background-color: rgb(255, 166, 0);
+  background-color: rgba(29, 92, 6, 0.89);
 }
 
 
 .logo {
-  background-image: url("images/gras.jpg");
+  background-image: url("../images/achtergrondfoto.jpg");
+  padding: 10px;
+  margin: 10px;
   font-size: 3em;
+  opacity: 0.8;
   color: White;
 }
 
-.naam {
-  color: black;
+.logo:hover {
+  opacity: 1.5;
+  color: rgb(12, 9, 9);
 }
 
+
+
+
+
 header {
+  background-color: #089013;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -120,6 +129,7 @@ header {
 }
 
 header li {
+  font-size: 1.2em;
   list-style: none;
   display: inline-block;
   padding: 0 10px;
@@ -164,7 +174,7 @@ header a:hover {
 
 .header-right ul li ul.dropdown-menu {
   position: absolute;
-  background-color: rgb(255, 166, 0);
+  background-color: #089013;
   padding: 5px;
   margin: 2px;
   border: #021603 1px solid;
@@ -173,7 +183,7 @@ header a:hover {
 }
 
 .header-right ul li ul.dropdown-menu li  {
-  color: #aa6804;
+  color: #089013;
   font-size: 14px;
   width: 100%;
   padding: 10px 0;
@@ -201,6 +211,7 @@ header a:hover {
   display: flex;
   text-align: justify;
   gap: 100px;
+  box-shadow: 0 3px 15px rgb(241, 237, 237);
 }
 
 .blok2 p:first-of-type {
@@ -209,7 +220,7 @@ header a:hover {
 
 article {
   border: 1px solid black;
-  background-color: rgb(255, 225, 72);
+  background-color: #089013;
   padding: 20px;
   flex: 1
 }
@@ -233,15 +244,16 @@ article {
 .blok4 a {
   color: black;
   text-decoration: none;
-  border: rgb(8, 8, 8) solid 3px;
-  background-color: rgb(255, 225, 72); 
+  border: rgb(246, 244, 244) solid 3px;
+  background-color: #089013; 
 }
 
 .blok4 a:hover {
-  background-color: #b2dfdb;
+  background-color: #39ba0a;
 }
 
 footer {
+  background-color: #089013;
   box-shadow: 0 1px 8px rgb(20, 19, 19);
   margin-block-end: 0;
   padding-block-end: 0;
