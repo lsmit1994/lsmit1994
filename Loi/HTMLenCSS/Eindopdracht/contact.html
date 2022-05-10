@@ -1,91 +1,85 @@
 <!DOCTYPE html>
-
-<head>
 <html lang="nl">
-<meta charset="UTF-8">
-<!--deze 2 meta tags moet in alle html bestanden zitten-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/main.css">
+   <head>
+      <title>Contact</title>
+      <meta charset="UTF-8">
+      <!--deze 2 meta tags moet in alle html bestanden zitten-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/main.css">
+   </head>
 
+   <body>
+      <section class="container3">
 
-<title>Contact</title>
+         <header class="header">
+            <div class="header-left">
+            <a href="index.html" class="logo">Hobby's<span class="naam">Leon</span></a>
+            </div>
 
-</head>
+            <nav class="header-right">
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="sport.html">Sport</a></li>
+                  <li><a href="#">Bordspellen</a>
+                     <ul class="dropdown-menu">
+                        <li><a href="catan.html">Kolonisten van Catan</a></li>
+                        <li><a href="risk.html">Risk</a></li>
+                        <li><a href="sequence.html">Sequence</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="gamen.html">Gamen</a></li>
+                  <li><a class="active" href="contact.html">Contact</a></li>
+               </ul>
+            </nav>
+            
+         </header>
 
-<body>
-   <section class="container3">
+         <section class="googlemap">
+            <div id="googleMap" style="width:100%;height:400px;"></div>
 
-      <header class="header">
-         <div class="header-left">
-          <a href="index.html" class="logo">Hobby's<span class="naam">Leon</span></a>
-         </div>
+               <script>
+               function myMap() {
+               var mapProp= {
+               center:new google.maps.LatLng(52.496267, 5.072587),
+               zoom:14,
+               };
+               var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+               }
+               </script>
 
-         <nav class="header-right">
-            <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="sport.html">Sport</a></li>
-               <li><a href="#">Bordspellen</a>
-                  <ul class="dropdown-menu">
-                     <li><a href="catan.html">Kolonisten van Catan</a></li>
-                     <li><a href="risk.html">Risk</a></li>
-                     <li><a href="sequence.html">Sequence</a></li>
-                  </ul>
-               </li>
-               <li><a href="gamen.html">Gamen</a></li>
-               <li><a class="active" href="contact.html">Contact</a></li>
-            </ul>
-         </nav>
-         
-      </header>
+               <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARlkDmY2WYRSJ-W849R2mDKiFMLC-otl4&callback=myMap"></script>
 
+         </section>
    
-      <section class="googlemap">
-         <div id="googleMap" style="width:100%;height:400px;"></div>
+         <section class="tabel">
+            <form id="verzamel" action="https://jkorpela.fi/cgi-bin/echo.cgi." method="post" target="_blank" enctype="application/x-www-form-urlencoded">
+               <label for="fname">Naam</label>
+               <input type="text" id="fname" name="firstname" placeholder="Voornaam.." required>
 
-            <script>
-            function myMap() {
-            var mapProp= {
-            center:new google.maps.LatLng(52.496267, 5.072587),
-            zoom:14,
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-            }
-            </script>
+               <label for="lname">Achternaam</label>
+               <input type="text" id="lname" name="lastname" placeholder="Achternaam.." required>
 
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARlkDmY2WYRSJ-W849R2mDKiFMLC-otl4&callback=myMap"></script>
+               <label for="email">E-mail adres</label>
+               <input type="text" id="email" name="email" placeholder="Email-adres" required>
 
+               <label for="telnr">Telefoonnummer:</label>
+               <input type="text" id="telnr" name="telefoonnummer" placeholder="Telefoonnummer..">
+
+               <label for="bericht">Bericht</label>
+               <textarea id="bericht" name="bericht" placeholder="Type hier uw bericht" style="height:200px"></textarea>
+
+               <input type="submit" value="Verzenden" form="verzamel" formaction="https://jkorpela.fi/cgi-bin/echo.cgi">
+            </form>
+         </section>
+
+         <footer>
+            <ul>
+               <li>Copright &copy; Leon Smit 2022</li>
+               <li><a href="contact.html">Contact</a></li>
+               <li>LOI Front-End Developer</li>
+            </ul>
+         </footer>
       </section>
-  
-
-
-      <section class="tabel">
-         <form action="action_page.php"></form>
-            <label for="fname">Naam</label>
-            <input type="text" id="fname" name="firstname" placeholder="Voornaam..">
-
-            <label for="lname">Achternaam</label>
-            <input type="text" id="lname" name="lastname" placeholder="Achternaam..">
-
-            <label for="email">E-mail adres</label>
-            <input type="text" id="lname" name="lastname" placeholder="Email-adres">
-
-
-            <label for="subject">Bericht</label>
-            <textarea id="bericht" name="bericht" placeholder="Type hier uw bericht" style="height:200px"></textarea>
-
-            <input type="submit" value="Verzenden">
-         </form>
-      
-      </section>
-
-      <footer>
-         <ul>
-            <li>Copright &copy; Leon Smit 2022</li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>LOI Front-End Developer</li>
-         </ul>
-      </footer>
-   </section>
-</body>
+   </body>
 
 </html>
