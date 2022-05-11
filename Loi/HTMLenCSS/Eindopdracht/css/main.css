@@ -336,29 +336,79 @@ input[type=submit]:hover {
 @media only screen and (max-width: 320px) {
 
 body {
-    background-color: rgb(255, 166, 0);
+    background-color: rgba(29, 92, 6, 0.89);
   }
 }
+
+section.container {
+  display: block;
+  background-color: rgba(29, 92, 6, 0.89) ;
+  padding: 0.5;
+  margin: 0;
+}
+
+.logo {
+  
+  font-size: 25px;
+}
+
+header {
+  display: block;
+
+}
+
+header li {
+  
+  display: block;
+
+}
+
+.blok2 {
+  display: block;
+}
+
+.media {
+  display: block;
+  padding: 6px;
+}
+
+.blok4 {
+  display: block;
+}
+
+.blok4 a {
+  border: rgb(246, 244, 244) solid;
+  background-color: #089013; 
+}
+
+.blok4 a:hover {
+  background-color: #39ba0a;
+}
+
+.header-right {
+  display: block;
+}
+
 
 
 @media only screen and (max-width: 768px) {
   
   
   body {
-    background-color: rgb(255, 166, 0);
+    background-color: rgba(29, 92, 6, 0.89);
   }
 }
 
 
 @media only screen and (max-width: 1024px) {
   body {
-    background-color: rgb(255, 166, 0);
+    background-color: rgba(29, 92, 6, 0.89);
   }
 }
 
 
 @media only screen and (max-width: 1440px) {
   body {
-    background-color: rgb(255, 166, 0);
+    background-color: rgba(29, 92, 6, 0.89);
   }
 }
