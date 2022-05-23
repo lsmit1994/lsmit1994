@@ -1,11 +1,5 @@
-* {
-  box-sizing: border-box;
-}
-
-.container {
+.wrapper {
   display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 6;
   grid-template-areas: 
   "header"
   "blok1"
@@ -13,11 +7,303 @@
   "blok3"
   "blok4"
   "footer";
-  padding: 20px;
-  margin-inline-start: 200px;
-  margin-inline-end: 200px;
   row-gap: 30px;
-  background-color: rgba(29, 92, 6, 0.89);
+  padding: 12px;
+}
+
+header {
+  background-color: #089013;
+  box-shadow: 0 1px 8px rgb(20, 19, 19);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  background-color: #089013;
+  box-shadow: 0 1px 8px rgb(20, 19, 19);
+  margin-block-end: 0;
+  padding-block-end: 0;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+@media only screen and (min-width: 320px) {
+  .header-right li {
+    display: block;
+  }
+
+  img {
+    min-height: 200px;
+    max-height: 375px;
+    object-fit: scale-down;
+  }
+
+  iframe {
+    height: 100%;
+  }
+  footer ul li {
+    padding: 10px;
+  }
+  span {
+    text-decoration-line: underline;
+    color: greenyellow;
+  }
+
+  .header-right ul li {
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+  }
+
+  .logo {
+    background-image: url("../images/achtergrondfoto.jpg");
+    padding: 10px;
+    margin: 10px;
+    font-size: 3em;
+    opacity: 0.8;
+    color: White;
+  }
+
+  .header-right ul li {
+    display: inline-flex;
+    font-size: 1.2em;
+    margin-top: 5px;
+  }
+
+  header a {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    transition: all 0.3s ease 0s;
+  }
+  
+  .header-left {
+    flex:0.7
+  }
+  
+  .header-right {
+    flex:1.3
+  }
+ 
+  .header-right ul li {
+    display: inline-block;
+  }
+      /* CSS voor dropdown menu */
+
+.header-right ul li ul.dropdown-menu {
+  position: absolute;
+  background-color: #089013;
+  border: #021603 1px solid;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header-right ul li ul.dropdown-menu li  {
+  color: #089013;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.header-right ul li ul.dropdown-menu li:hover {
+  color:#b2dfdb ;
+}
+
+.header-right ul li:hover ul.dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.foto1 {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blok2 {
+  display: flex;
+  text-align: justify;
+  gap: 100px;
+  box-shadow: 0 3px 15px rgb(241, 237, 237);
+}
+
+.blok2 p:first-of-type {
+  padding-inline-end: 20px;
+}
+
+article {
+  border: 1px solid black;
+  background-color: #089013;
+  padding: 20px;
+  flex: 1
+}
+
+.media {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.media div {
+  flex: 1;
+}
+
+footer ul {
+  font-size: 1em;
+  display: flex;
+  text-align: center;
+  padding-block-end: 0;
+}
+
+footer ul li {
+  flex:1;
+  list-style: none;
+}
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: aliceblue;
+  }
+  .wrapper {
+    padding: 20px;
+    margin-inline-start: 100px;
+    margin-inline-end: 100px;
+    row-gap: 30px;
+  }
+  .active {
+    color: rgb(248, 248, 250);
+  }
+
+  .logo {
+    background-image: url("../images/achtergrondfoto.jpg");
+    padding: 10px;
+    margin: 10px;
+    font-size: 3em;
+    opacity: 0.8;
+    color: White;
+  }
+  
+  .logo:hover {
+    opacity: 1.5;
+    color: rgb(12, 9, 9);
+  }
+
+  header a:hover {
+    color: #b2dfdb;
+  }
+
+  header a {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    transition: all 0.3s ease 0s;
+  }
+
+  .header-left {
+    flex:1;
+  }
+  
+  .header-right {
+    flex:1.6;
+  }
+
+  header {
+    gap: 80px;
+  }
+
+  .header-right ul li {
+    display: inline-flex;
+    font-size: 1.2em;
+    margin-top: 5px;
+  }
+
+  .blok4 {
+    display: flex;
+    text-align: justify;
+    gap: 20px;
+  }
+  
+  .blok4 a {
+    color: black;
+    text-decoration: none;
+    border: rgb(246, 244, 244) solid 3px;
+    background-color: #089013; 
+  }
+
+  .media {
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  .media div {
+    flex: 1;
+  }
+    
+  .blok4 a:hover {
+    background-color: #39ba0a;
+  }
+
+  span {
+    text-decoration-line: none;
+    color: black;
+  }
+
+  footer ul {
+    font-size: 1em;
+    display: flex;
+    text-align: center;
+    padding-block-end: 0;
+  }
+  
+  footer ul li {
+    flex:1;
+    list-style: none;
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  footer ul li a:hover {
+    color: #ddd;
+  }
+
+}
+
+.naam {
+  color: black;
+  text-decoration: none;}
+ 
+body{
+  background-color:rgba(29, 92, 6, 0.89) ;
+  margin: 0px !important;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  background-image: url("../images/achtergrondfoto.jpg");
+  opacity: 0.8;
+  color: White;
+}
+
+.logo:hover {
+  opacity: 1.5;
+  color: rgb(12, 9, 9);
 }
 
 .container1 {
@@ -100,188 +386,6 @@
 }
 
 
-.logo {
-  background-image: url("../images/achtergrondfoto.jpg");
-  padding: 10px;
-  margin: 10px;
-  font-size: 3em;
-  opacity: 0.8;
-  color: White;
-}
-
-.logo:hover {
-  opacity: 1.5;
-  color: rgb(12, 9, 9);
-}
-
-
-
-
-
-header {
-  background-color: #089013;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 15px 40px;
-  box-shadow: 0 1px 8px rgb(20, 19, 19);
-}
-
-header li {
-  font-size: 1.2em;
-  list-style: none;
-  display: inline-block;
-  padding: 0 10px;
-}
-
-header a {
-  text-decoration: none;
-  color: rgb(50, 50, 50);
-  transition: all 0.3s ease 0s;
-}
-
-header a:hover {
-  color: #b2dfdb;
-}
-
-.header-left {
-  flex:1 
-}
-
-.header-right {
-  flex:1
-}
-
-.tabellen {
-  display: flex;
-  justify-content: flex-end;
-  padding: 15px 40px;
-  gap: 10px;
-  justify-content: space-between;
-  box-shadow: 0 1px 8px rgb(20, 19, 19);
-}
-
-.tabel1 {
-  flex:1
-}
-
-.tabel2 {
-  flex:1
-}
-
-/* CSS voor dropdown menu */
-
-.header-right ul li ul.dropdown-menu {
-  position: absolute;
-  background-color: #089013;
-  padding: 5px;
-  margin: 2px;
-  border: #021603 1px solid;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.header-right ul li ul.dropdown-menu li  {
-  color: #089013;
-  font-size: 14px;
-  width: 100%;
-  padding: 10px 0;
-}
-
-.header-right ul li ul.dropdown-menu li:hover {
-  color:#b2dfdb ;
-}
-
-.header-right ul li:hover ul.dropdown-menu {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-
-
-.foto1 {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.blok2 {
-  display: flex;
-  text-align: justify;
-  gap: 100px;
-  box-shadow: 0 3px 15px rgb(241, 237, 237);
-}
-
-.blok2 p:first-of-type {
-  padding-inline-end: 20px;
-}
-
-article {
-  border: 1px solid black;
-  background-color: #089013;
-  padding: 20px;
-  flex: 1
-}
-
-.media {
-  display: flex;
-  gap: 20px;
-  
-}
-
-.media div {
-  flex: 1;
-}
-
-.blok4 {
-  display: flex;
-  text-align: justify;
-  gap: 20px;
-}
-
-.blok4 a {
-  color: black;
-  text-decoration: none;
-  border: rgb(246, 244, 244) solid 3px;
-  background-color: #089013; 
-}
-
-.blok4 a:hover {
-  background-color: #39ba0a;
-}
-
-footer {
-  background-color: #089013;
-  box-shadow: 0 1px 8px rgb(20, 19, 19);
-  margin-block-end: 0;
-  padding-block-end: 0;
-}
-
-footer ul {
-  font-size: 1em;
-  display: flex;
-  text-align: center;
-  padding-block-end: 0;
-}
-
-footer ul li {
-  flex:1;
-  list-style: none;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-footer ul li a:hover {
-  color: #ddd;
-}
-
-.active {
-  color: rgb(248, 248, 250);
-}
 
 /* hier begint css voor content bordspellen */
 
@@ -299,9 +403,6 @@ footer ul li a:hover {
 .tabel2 td { border-block-end: 1px solid lightgrey; padding: .5em; }
 .tabel2 tfoot { font-size: .8rem; text-align: center; border-block-start: 2px solid darkgrey; }
 
-
-
-
 /* hier begint css voor content contact formulier */
 
 input[type=text], select, textarea {
@@ -316,7 +417,6 @@ input[type=text], select, textarea {
   resize: vertical 
 }
 
-
 input[type=submit] {
   background-color: #aa6804;
   color: white;
@@ -328,87 +428,4 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #021603;
-}
-
-/** Vanaf hier wordt het responsive gemaakt**/
-
-
-@media only screen and (max-width: 320px) {
-
-body {
-    background-color: rgba(29, 92, 6, 0.89);
-  }
-}
-
-section.container {
-  display: block;
-  background-color: rgba(29, 92, 6, 0.89) ;
-  padding: 0.5;
-  margin: 0;
-}
-
-.logo {
-  
-  font-size: 25px;
-}
-
-header {
-  display: block;
-
-}
-
-header li {
-  
-  display: block;
-
-}
-
-.blok2 {
-  display: block;
-}
-
-.media {
-  display: block;
-  padding: 6px;
-}
-
-.blok4 {
-  display: block;
-}
-
-.blok4 a {
-  border: rgb(246, 244, 244) solid;
-  background-color: #089013; 
-}
-
-.blok4 a:hover {
-  background-color: #39ba0a;
-}
-
-.header-right {
-  display: block;
-}
-
-
-
-@media only screen and (max-width: 768px) {
-  
-  
-  body {
-    background-color: rgba(29, 92, 6, 0.89);
-  }
-}
-
-
-@media only screen and (max-width: 1024px) {
-  body {
-    background-color: rgba(29, 92, 6, 0.89);
-  }
-}
-
-
-@media only screen and (max-width: 1440px) {
-  body {
-    background-color: rgba(29, 92, 6, 0.89);
-  }
 }
