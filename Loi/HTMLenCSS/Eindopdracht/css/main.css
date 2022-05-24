@@ -190,10 +190,10 @@ footer ul li {
     box-shadow: 0 1px 8px rgb(20, 19, 19);
   }
   
-  
-
-  iframe {
-    height: 100%;
+  iframe, video {
+    min-height: 300px;
+    max-width: 500px;
+    justify-content: center;
   }
   footer ul li {
     padding: 10px;
@@ -206,6 +206,41 @@ footer ul li {
   .header-right ul li {
     padding: 5px;
   }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color:#089013;
+    min-width: 160px;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-menu a {
+    background-color: #089013;
+    padding: 12px 16px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  .dropdown {
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu li {
+    float: left;
+  }
+
+  .show {
+    display:block;
+    }
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -246,48 +281,13 @@ footer ul li {
     display: inline-block;
   }
 
- /* CSS voor dropdown menu */
-
 .dropdown-menu a:hover {
   color:#b2dfdb ;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color:#089013;
-  min-width: 160px;
-  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-menu a {
-  background-color: #089013;
-  padding: 12px 16px;
-  color: black;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-.dropdown {
-  z-index: 2;
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-menu li {
-  float: left;
 }
 
 .dropbtn {
   border: none;
   cursor: pointer;
-}
-.show {
-display:block;
 }
 
 
@@ -313,15 +313,6 @@ article {
   background-color: #089013;
   padding: 20px;
   flex: 1
-}
-
-.media {
-  display: flex;
-  gap: 20px;
-}
-
-.media div {
-  flex: 1;
 }
 
 .tabellen {
