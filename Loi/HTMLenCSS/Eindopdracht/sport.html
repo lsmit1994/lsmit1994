@@ -9,7 +9,7 @@
    </head>
 
    <body>
-      <section class="container1">
+      <section class="wrapper-sport">
 
          <header class="header">
             <div class="header-left">
@@ -19,14 +19,15 @@
             <nav class="header-right">
                <ul>
                   <li><a href="index.html">Home</a></li>
-                  <li><a class="active" href="sport.html">Sport</a></li>
-                  <li><a href="#">Bordspellen</a>
-                     <ul class="dropdown-menu">
-                        <li><a href="catan.html">Kolonisten van Catan</a></li>
-                        <li><a href="risk.html">Risk</a></li>
-                        <li><a href="sequence.html">Sequence</a></li>
-                     </ul>
-                  </li>
+                  <li><a id="active" href="sport.html">Sport</a></li>
+                  <li class="dropdown">
+                     <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Bordspellen</a>
+                     <div class="dropdown-menu" id="myDropdown">
+                        <a href="catan.html">Kolonisten van Catan</a>
+                        <a href="risk.html">Risk</a>
+                        <a href="sequence.html">Sequence</a>
+                     </div>
+                  </li>        
                   <li><a href="gamen.html">Gamen</a></li>
                   <li><a href="contact.html">Contact</a></li>
                </ul>
@@ -38,7 +39,7 @@
             <h2>Voetbal</h2>
             <p>Voetbal is een wereldwijd populaire balsport waarbij twee ploegen van elf spelers moeten proberen de bal in het doel van de tegenstander te krijgen. 
                De bal mag met ieder deel van het lichaam gespeeld worden, met uitzondering van armen en handen (behalve bij de inworp).</p>
-               <img src="images/voetbalstadion.jpg" alt="Voorbeeld van Voetbal">
+               <img class="sportimg" src="images/voetbalstadion-aangepast.jpg" alt="Voorbeeld van Voetbal">
 
                <hr>
 
@@ -47,7 +48,7 @@
                Voor de fietssporten waarbij het op snelheid aankomt – en dat zijn de meeste – wordt ook de term wielrennen gebruikt. Er zijn verschillende takken binnen de wielersport. 
                Binnen elke tak draagt de wereldkampioen op een bepaald onderdeel altijd de regenboogtrui.   
                De Internationale Wielerunie (UCI) is de wereldwijde overkoepelende organisatie binnen de wielersport.</p>
-               <img src="images/zwift.jpg" alt="Voorbeeld van zwift">
+               <img class="sportimg" src="images/zwift.jpg" alt="Voorbeeld van zwift" width="100%" height="auto">
 
 
                <hr>
@@ -63,11 +64,11 @@
                aangezien de bal steeds kan terugkeren. De sport wordt zowel recreatief als competitief beoefend. 
                Padelspelers zijn over het algemeen lid van een padelclub, die dan is aangesloten bij een padelfederatie. 
                De wereldpadelbond is de FIP, Federación International de Padel.</p>
-               <img src="images/padel23.jpg" alt="Voorbeeld van padel">
-
-
-
+               <img src="images/padel23.jpg" alt="Voorbeeld van padel" width="100%" height="auto">
          </section>
+
+
+         
 
 
 
@@ -81,7 +82,26 @@
       
       </section>
 
-  
+      <script>
+         function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+        
+            var dropdowns = document.getElementsByClassName("dropdown-menu");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>
     
    </body>
 

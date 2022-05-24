@@ -18,15 +18,16 @@
 
             <nav class="header-right">
                <ul>
-                  <li><a class="active" href="index.html">Home</a></li>
+                  <li><a id="active" href="index.html">Home</a></li>
                   <li><a href="sport.html">Sport</a></li>
-                  <li><a href="#">Bordspellen</a>
-                     <ul class="dropdown-menu">
-                        <li><a href="catan.html">Kolonisten van Catan</a></li>
-                        <li><a href="risk.html">Risk</a></li>
-                        <li><a href="sequence.html">Sequence</a></li>
-                     </ul>
-                  </li>
+                  <li class="dropdown">
+                     <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Bordspellen</a>
+                     <div class="dropdown-menu" id="myDropdown">
+                        <a href="catan.html">Kolonisten van Catan</a>
+                        <a href="risk.html">Risk</a>
+                        <a href="sequence.html">Sequence</a>
+                     </div>
+                  </li>        
                   <li><a href="gamen.html">Gamen</a></li>
                   <li><a href="contact.html">Contact</a></li>
                </ul>
@@ -71,7 +72,7 @@
                </div>
 
                <div>
-                  <iframe class="video" width="100%" src="https://www.youtube.com/embed/dushZybUYnM" title="YouTube video player"></iframe>
+                  <iframe class="video" ddddddddddddddddddddddddddddddddddddddd src="https://www.youtube.com/embed/dushZybUYnM" title="YouTube video player"></iframe>
                </div>
                
                <div>
@@ -132,6 +133,26 @@
          
       </section>
       
+      <script>
+         function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+        
+            var dropdowns = document.getElementsByClassName("dropdown-menu");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>
    </body>
 
 </html>

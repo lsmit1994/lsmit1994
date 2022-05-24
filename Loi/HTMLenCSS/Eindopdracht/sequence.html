@@ -7,11 +7,13 @@
       <!--deze 2 meta tags moet in alle html bestanden zitten-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="css/main.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
    </head>
 
    <body>
-      <section class="container4">
-
+      <section class="wrapper-sequence">
          <header class="header">
             <div class="header-left">
             <a href="index.html" class="logo">Hobby's<span class="naam">Leon</span></a>
@@ -21,12 +23,14 @@
                <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="sport.html">Sport</a></li>
-                  <li><a class="active" href="#">Bordspellen</a>
-                     <ul class="dropdown-menu">
-                        <li><a href="catan.html">Kolonisten van Catan</a></li>
-                        <li><a href="risk.html">Risk</a></li>
-                        <li><a href="sequence.html">Sequence</a></li>
-                     </ul>
+                  <li class="dropdown">
+                     <a href="javascript:void(0)" class="dropbtn" id="active" onclick="myFunction()">Bordspellen</a>
+                     <div class="dropdown-menu" id="myDropdown">
+                        <a href="catan.html">Kolonisten van Catan</a>
+                        <a href="risk.html">Risk</a>
+                        <a href="sequence.html">Sequence</a>
+                     </div>
+                  </li>        
                   <li><a href="gamen.html">Gamen</a></li>
                   <li><a href="contact.html">Contact</a></li>
                </ul>
@@ -206,7 +210,26 @@
 
       </section>
 
-      
+      <script>
+         function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+        
+            var dropdowns = document.getElementsByClassName("dropdown-menu");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>
       
       
    </body>
