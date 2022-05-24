@@ -57,8 +57,6 @@
   font-family: 'Macondo', cursive;
 }
 
-
-
 .wrapper-sequence {
   display: grid;
   grid-template-areas: 
@@ -103,7 +101,6 @@ body{
   background-color:rgba(29, 92, 6, 0.89) 
 }
   
-
 header {
   background-color: #089013;
   box-shadow: 0 1px 8px rgb(20, 19, 19);
@@ -214,7 +211,7 @@ footer ul li {
     min-width: 160px;
     box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
   }
-  
+
   .dropdown-menu a {
     background-color: #089013;
     padding: 12px 16px;
@@ -223,7 +220,7 @@ footer ul li {
     display: block;
     text-align: left;
   }
-  
+
   li.dropdown {
     display: inline-block;
   }
@@ -232,7 +229,7 @@ footer ul li {
     position: relative;
     display: inline-block;
   }
-  
+
   .dropdown-menu li {
     float: left;
   }
@@ -281,77 +278,130 @@ footer ul li {
     display: inline-block;
   }
 
-.dropdown-menu a:hover {
-  color:#b2dfdb ;
+  .dropdown-menu a:hover {
+    color:#b2dfdb ;
+  }
+
+  .dropbtn {
+    border: none;
+    cursor: pointer;
+  }
+
+
+  .foto1 {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .blok2 {
+    display: flex;
+    text-align: justify;
+    gap: 100px;
+    box-shadow: 0 3px 15px rgb(241, 237, 237);
+  }
+
+  .blok2 p:first-of-type {
+    padding-inline-end: 20px;
+  }
+
+  article {
+    border: 1px solid black;
+    background-color: #089013;
+    padding: 20px;
+    flex: 1
+  }
+
+  .tabellen {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 40px;
+    gap: 30px;
+    justify-content: space-between;
+    box-shadow: 0 1px 8px rgb(20, 19, 19);
+  }
+
+  .tabel1 {
+    flex:1
+  }
+
+  .tabel2 {
+    flex:1
+  }
+
+  .figure1, .figure2, .figure3 {
+    display: flex; 
+    position: relative;
+    gap: 20px; 
+    padding: 10px;
+  }
+
+  .figure1 img, .figure2 img, .figure3 img {
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+  .figure2 img {
+    position: relative;
+    float: right;
+  }
+  .figure1 {
+    float: left;
+  }
+  .figure2 {
+    float: right;
+  }
+
+  .figure3 {
+    float: left;
+  }
+
+  .figure2 figcaption {
+    float: left;
+  }
+
+  .gamevideo div iframe {
+    min-height: 400px;
+    max-height: 600px;
+    max-width: 800px;
+  }
+
+  footer ul {
+    font-size: 1em;
+    display: flex;
+    text-align: center;
+    padding-block-end: 0;
+  }
+
+  footer ul li {
+    flex:1;
+    list-style: none
+  }
+
+  img {
+    object-fit:unset;
+  }
+
+  .media {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 2;
+    grid-gap: 10px;
+  }
+  
+  .col:nth-child(-1n + 3) {
+    grid-column: span 4;
+  }
+  .col:nth-last-child(2) {
+    grid-row-start: 2;
+    grid-column: 1 / span 6;
+  }
+  .col:nth-last-child(1) {
+    grid-row-start: 2;
+    grid-column: 7 / span 6;
+  }
+  
 }
-
-.dropbtn {
-  border: none;
-  cursor: pointer;
-}
-
-
-.foto1 {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.blok2 {
-  display: flex;
-  text-align: justify;
-  gap: 100px;
-  box-shadow: 0 3px 15px rgb(241, 237, 237);
-}
-
-.blok2 p:first-of-type {
-  padding-inline-end: 20px;
-}
-
-article {
-  border: 1px solid black;
-  background-color: #089013;
-  padding: 20px;
-  flex: 1
-}
-
-.tabellen {
-  display: flex;
-  justify-content: flex-end;
-  padding: 15px 40px;
-  gap: 30px;
-  justify-content: space-between;
-  box-shadow: 0 1px 8px rgb(20, 19, 19);
-}
-
-.tabel1 {
-  flex:1
-}
-
-.tabel2 {
-  flex:1
-}
-
-.gamevideo div iframe {
-  min-height: 400px;
-  max-height: 600px;
-  max-width: 800px;
-}
-
-footer ul {
-  font-size: 1em;
-  display: flex;
-  text-align: center;
-  padding-block-end: 0;
-}
-
-footer ul li {
-  flex:1;
-  list-style: none;
-}
-
-}
-
 
 @media only screen and (min-width: 1024px) {
   
@@ -419,14 +469,51 @@ footer ul li {
     background-color: #089013; 
   }
 
-  .media {
-    display: flex;
-    gap: 20px;
-    
+  .figure1, .figure2, .figure3 {
+    display: block; 
+    float: none;
   }
   
-  .media div {
-    flex: 1;
+  .figure1 img, .figure2 img, .figure3 img {
+    max-height: none;
+    max-width: none;
+  }
+  
+  .figure2 img {
+    position: unset;
+    float: none;
+  }
+  
+  .figure2 figcaption {
+    float: none;
+  }
+
+  .figure2 {
+    display: table;
+    margin-bottom: 50px;
+    border-bottom: none;
+  }
+  .figure2 figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    border-bottom: none;
+  }
+
+  .media {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  img {
+    min-height: 200px;
+    max-height: 375px;
+    object-fit: scale-down;
+  }
+
+  iframe, video {
+    min-height: 100px;
+    min-width: 150px;
   }
     
   .blok4 a:hover {
