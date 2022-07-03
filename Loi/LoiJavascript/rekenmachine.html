@@ -45,28 +45,31 @@
             padding: 20px 0;
             font-size: 30px;
             cursor: pointer;
-            box-shadow: -1px -1px 4px  rgba(0,0,0,0.6) inset;
+            box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.6) inset;
         }
-        #numbers div{
+
+        #numbers div {
             padding: 30px 0 0 0
         }
 
         #numbers div:active,
         #operators div:active {
-           
-            box-shadow: 1px 1px 4px  rgba(0,0,0,0.6) inset;
+
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6) inset;
         }
-        #screen{
+
+        #screen {
             margin: 18px;
             width: calc(100% - 30px);
-            box-shadow: 3px 3px 4px  rgba(0,0,0,0.6) inset;
-            background-color:rgba(239, 239, 239, 0.3);
+            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6) inset;
+            background-color: rgba(239, 239, 239, 0.3);
             display: flex;
 
         }
 
-        #result, #operator {
-            width: 100%;
+        #result,
+        #operator {
+            width: 80%;
             height: 100px;
             padding: 20px;
             font-family: 'Courier New', Courier, monospace;
@@ -74,10 +77,23 @@
             text-align: right;
             border: none;
         }
+
+        #calculation {
+            margin: 18px;
+            width: calc(50% - 30px);
+            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6) inset;
+            background-color: rgba(239, 239, 239, 0.3);
+            display: flex;
+
+        }
+        
+
+
+
         #operator {
-            width: 10%;
+            width: 20%;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 10px;
+            font-size: 24px;
         }
     </style>
 </head>
@@ -85,8 +101,11 @@
 <body>
     <div id="calculator">
         <div id="screen">
-        <input type="text" id="result" placeholder ="0" value=""  disabled>
-        <input type="text" id="operator" disabled></div>
+            <!-- add new input to display previous input + operator + current + = -->
+            <input type="text" id="calculation" value="">
+            <input type="text" id="result" placeholder="0" value="" disabled>
+            <input type="text" id="operator" value="" disabled>
+        </div>
         <div id="keys">
             <div id="numbers">
                 <div onclick="onClickNumber(7)">7</div>
@@ -111,31 +130,7 @@
             </div>
         </div>
     </div>
-    <script>
-        const myInput = document.getElementById('result');
-        const myOperator = document.getElementById('operator');
-
-        function onClickNumber(clickedNumber){
-            console.log(clickedNumber);
-            myInput.value += clickedNumber;
-        }
-
-        function onClickOperator(evt){
-            console.log(evt);
-            myOperator.value = evt;
-        }
-
-
-        function onClickCancel(evt){
-            console.log(evt);
-            myInput.value = "";
-            myOperator.value = "";
-        }
-
-        function onClickEquals(evt){
-            console.log(evt);
-
-        }
+    <script src="calculator.js">
 
     </script>
 </body>
